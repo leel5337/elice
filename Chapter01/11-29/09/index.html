@@ -1,0 +1,29 @@
+<!--CSS 우선순위-->
+
+<!--지시사항-->
+<!-- 1. <body> 태그 안에 다음을 입력합니다.-->
+<!-- 2. <style> 태그 안에서 여러 선택자들의 속성을 변경해보며, 캐스케이딩에 대해 알아봅니다.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS 우선 순위</title>
+        <style>
+            p {
+                color:blue
+            }
+            header h3 {
+                background-color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>순서 캐스케이딩</p>
+        <header>
+            <h3>디테일 캐스케이딩</h3>
+        </header>
+        <h4 style="color:green;" id="color" class="color">선택자 캐스케이딩</h4>
+    </body>
+</html>
