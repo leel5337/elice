@@ -1,0 +1,35 @@
+<!--CSS 속성의 상속-->
+
+<!--지시사항-->
+<!-- 1. <body> 태그 안에 <header> 태그와 <footer> 태그를 입력합니다. 두 태그는 <h2> 태그와 <p> 태그를 자식 태그로 갖습니다.-->
+<!-- 2. <style> 태그 안에서 부모 태그와 자식 태그의 CSS 속성을 설정해보며, 속성의 상속에 대해 알아봅니다.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS 속성의 상속</title>
+        <style>
+            header h2 {
+                color: blue;
+            }
+            header p {
+                color: red;
+            }
+            footer p {
+                color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h2>Header H2</h2>
+            <p>Header P</p>
+        </header>
+        <footer>
+            <h2>Footer H2</h2>
+            <p>Footer P</p>
+        </footer>
+    </body>
+</html>
