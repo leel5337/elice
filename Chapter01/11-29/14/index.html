@@ -1,0 +1,56 @@
+<!--마진병합현상-->
+
+<!--지시사항-->
+<!--형제지간의 마진병합-->
+<!-- 1. box1의 margin-bottom을 150px으로 설정합니다.-->
+<!-- 2. box2의 margin-top을 100px으로 설정하고 실행해봅시다.-->
+
+<!--부모자식간의 마진병합-->
+<!-- 3. box1과 box2와 관련된 코드들을 모두 주석 처리합니다. main과 article과 관련된 코드들을 모두 주석 해제합니다.-->
+<!-- 4. article의 margin-top을 100px으로 설정하고 실행해봅시다.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>마진병합현상</title>
+        <style>
+            /*
+            #box1 {.
+              width: 100%;
+              height: 200px;
+              background-color: yellow;
+              margin-bottom: 150px;
+            }
+            #box2 {
+              width: 100%;
+              height: 200px;
+              background-color: pink;
+              margin-top: 100px;
+            }
+            */
+
+            main {
+                width: 100%;
+                height: 400px;
+                background-color: yellow;
+            }
+            article {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                margin-top: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 형제 지간에 발생하는 마진 병합 현상 -->
+        <div id="box1"></div>
+        <div id="box2"></div>
+
+        <!-- 부모 자식 지간에 발생하는 마진 병합 현상 -->
+        <main role="main">
+            <article></article>
+        </main>
+    </body>
+</html>
