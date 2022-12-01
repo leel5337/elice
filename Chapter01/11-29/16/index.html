@@ -1,0 +1,78 @@
+<!--레이아웃에 영향을 미치는 속성 - float-->
+
+<!--지시사항-->
+<!--float 속성 확인-->
+<!-- 1. float을 사용하여 .left를 왼쪽 끝에, .right를 오른쪽 끝에 배치합니다.-->
+<!-- 2. 실행버튼을 누르고 전체화면으로 확장하여 결과를 확인해봅시다.-->
+
+<!--웹사이트 레이아웃 구조 만들기-->
+<!-- 3. .left와 .right과 관련된 모든 코드들을 주석 처리하고, 주석 처리 되어 있던 코드들은 주석을 해제합니다.-->
+<!-- 4. #left를 맨 왼쪽에 정렬하기 위해 float: left;를 입력합니다.-->
+<!-- 5. main을 #left 바로 옆에 순차적으로 왼쪽 정렬하기 위해 float: left;를 입력합니다.-->
+<!-- 6. #right을 맨 오른쪽에 정렬하기 위해 float: right;를 입력합니다.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>레이아웃에 영향을 미치는 속성 - float</title>
+        <style>
+            /*
+            .left {
+                width: 300px;
+                height: 300px;
+                background-color: yellow;
+                float: left;
+            }
+            .right {
+                width: 300px;
+                height: 400px;
+                background-color: blue;
+                float: right;
+            }
+            */
+            header {
+                width: 100%;
+                height: 100px;
+                background-color: yellow;
+            }
+            #left {
+                float: left;
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+            main {
+                float: left;
+                width: 300px;
+                height: 200px;
+                background-color: green;
+            }
+            #right {
+                float: right;
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+            }
+            footer {
+                width: 100%;
+                height: 100px;
+                background-color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="left"></div>
+        <div class="right"></div>
+
+        <!-- 전통적인 웹사이트 레이아웃 구조 만들기 -->
+        <header></header>
+
+        <article id="left"></article>
+        <main></main>
+        <article id="right"></article>
+
+        <footer></footer>
+    </body>
+</html>
