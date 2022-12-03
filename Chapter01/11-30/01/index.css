@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.map{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+@media(min-width: 360px) and (max-width: 720px) {
+    .map{
+        background-color: blue;
+        transition: background-color 1.5s;
+    }
+    .map:hover {
+        background-color: orange;
+    }
+}
