@@ -1,0 +1,35 @@
+<!--미디어쿼리 사용 시 주의사항 (2) - 속성 상속-->
+
+<!--지시사항-->
+<!-- 1. 미디어쿼리 안쪽에는 배경색이 지정되어 있지 않지만, 미디어쿼리 바깥쪽에는 배경색이 지정되어 있습니다. 실행을 눌러 어떻게 출력되는지 확인해 봅니다.-->
+<!-- 2. 미디어쿼리 바깥쪽에 border: solid 10px red;를 입력하고, 실행을 눌러 어떻게 출력되는지 확인해 봅니다.-->
+<!-- 3. 미디어쿼리 안쪽에 border: none;을 입력하고, 실행을 눌러 테두리가 어떻게 출력되는지 확인해 봅니다.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>미디어쿼리</title>
+        <style>
+            .media {
+                width: 500px;
+                height: 500px;
+                background-color: yellow;
+                border: solid 10px red;
+            }
+
+            @media (min-width: 320px) and (max-width: 800px) {
+                .media {
+                    width: 300px;
+                    height: 300px;
+                    border: none;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="media"></div>
+    </body>
+</html>
