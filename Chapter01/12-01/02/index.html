@@ -1,0 +1,35 @@
+<!--CSS Transition-->
+
+<!--지시사항-->
+<!-- 1. <style> 태그 안에 .transition:hover { width: 300px; }를 입력하여, 특정 영역 마우스를 올렸을 때, 가로폭이 300px로 변하도록 합니다. -->
+<!-- 2. transition-property로 width를 넣어, width에 효과를 적용하도록 합니다.-->
+<!-- 3. transition-duration로 2s를 넣어, 효과가 2초 동안 일어나도록 합니다.-->
+<!-- 4. transition-timing-function로 linear를 넣어, 효과 속도를 일정하게 합니다.-->
+<!-- 5. transition-delay로 1s를 넣어, 효과가 1초 후에 나타나도록 합니다.-->
+<!-- 6. transition 속성값을 한번에 작성해봅시다.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Transtion</title>
+        <style>
+            .transition {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                transition-delay: 1s
+            }
+            .transition:hover {
+                width: 300px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="transition"></div>
+    </body>
+</html>
