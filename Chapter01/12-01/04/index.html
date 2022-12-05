@@ -1,0 +1,38 @@
+<!--CSS Transform & Animation-->
+
+<!--지시사항-->
+<!-- 1. .box1 안에 animation 속성을 입력합니다.-->
+<!-- 2. 애니메이션 이름은 rotation으로 설정합니다.-->
+<!-- 3. duration으로 1500ms을 입력합니다. 이때, 1000ms은 1s입니다.-->
+<!-- 4. timing-function으로 linear을 입력합니다.-->
+<!-- 5. iteration-count으로 infinite을 입력하여, 반복 효과가 무한으로 나타나도록 합니다.-->
+<!-- 6. direction으로 alternate을 입력하여, 왕복 효과가 나타나도록 합니다.-->
+<!-- 7. @keyframes rotation { }를 작성하여 from과 to를 설정합니다. from은 transform: rotate(-10deg);, to는 transform: rotate(10deg);로 설정합니다.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Transform & Animation</title>
+        <style>
+            .box1 {
+                width: 300px;
+                height: 300px;
+                background-color: red;
+                animation: rotation 1500ms linear infinite alternate;
+            }
+            @keyframes rotation {
+                from {
+                    transform: rotate(-10deg);
+                }
+                to {
+                    transform: rotate(10deg);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box1"></div>
+    </body>
+</html>
