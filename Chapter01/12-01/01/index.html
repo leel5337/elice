@@ -1,0 +1,33 @@
+<!--CSS Transform-->
+
+<!--지시사항-->
+<!-- 1. .transform클래스 내에 아래 속성값을 작성해보며 각각의 실행결과를 비교해봅시다. 이때 margin: 200px 0 0 200px; 을 입력하여 결과물을 확인합니다.-->
+<!-- 2. 도형을 45도 회전시키기 위해 transform: rotate();의 괄호 안에 45deg를 넣고 실행해봅시다.-->
+<!-- 3. 가로폭은 두 배, 세로폭은 세 배 확대하기 위해 transform: scale();의 괄호 안에 2, 3을 넣어 실행해봅시다.-->
+<!-- 4. x좌표와 y좌표를 바꿔주기 위해 transform: translate();의 괄호 안에 100px, 200px을 넣어 실행해봅시다.-->
+<!-- 5. x축으로 10도, y축으로 20도만큼 비틀기 위해 transform: skew();의 괄호 안에 10deg, 20deg를 넣어 실행해봅시다.-->
+<!-- 6. 위 실행을 통해 나중에 작성한 transform 속성이 적용되는 것을 알 수 있습니다.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Transform</title>
+        <style>
+            .transform {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                margin: 200px 0 0 200px;
+                transform: rotate(45deg);
+                transform: scale(2, 3);
+                transform: translate(100px, 200px);
+                transform: skew(10deg, 20deg);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="transform"></div>
+    </body>
+</html>
